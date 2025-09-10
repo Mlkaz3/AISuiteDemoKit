@@ -142,44 +142,8 @@ A BD executive wants to propose a collaboration with another company.
     st.write("Provides key value points → AI generates a professional, persuasive proposal email that highlights mutual benefits.")
     copy_button(example2, key="emailwriter_ex2")
 
-
 elif module == "AI@ SmartReply":
-    st.subheader("Example 1: Project Status Update (Professional & Concise)")
-    st.write("Scenario:")
-    example1 = """
-Hi, can you share the latest project status update?
-"""
-    st.code(example1, language="text")
-    st.write("Team inputs the incoming message → AI generates a professional, concise reply with progress percentage, timeline, and no major blockers.")
-    copy_button(example1, key="smartreply_ex1")
-
-    st.subheader("Example 2: Weekend Catch-up (Friendly & Casual)")
-    st.write("Scenario:")
-    example2 = """
-Hey, are you free to catch up this weekend?
-"""
-    st.code(example2, language="text")
-    st.write("Team inputs the casual message → AI drafts a warm and friendly reply suggesting Saturday afternoon at a coffee shop, while staying open to other ideas.")
-    copy_button(example2, key="smartreply_ex2")
-
-    st.subheader("Example 3: Timesheet Reminder (Polite & Professional)")
-    st.write("Scenario:")
-    example3 = """
-Reminder: Please submit your timesheet today.
-"""
-    st.code(example3, language="text")
-    st.write("Team inputs the reminder → AI creates a polite, professional acknowledgment confirming the timesheet has been submitted and thanking for the reminder.")
-    copy_button(example3, key="smartreply_ex3")
-
-    st.subheader("Example 4: Delay Explanation (Respectful & Accountable)")
-    st.write("Scenario:")
-    example4 = """
-We noticed some delays in your recent report submissions. Could you explain the reason?
-"""
-    st.code(example4, language="text")
-    st.write("Team inputs the query → AI generates a respectful reply explaining the delay (waiting for client data), assures completion by tomorrow, and highlights steps to avoid recurrence.")
-    copy_button(example4, key="smartreply_ex4")
-
+  st.write("Testing")
 
 elif module == "AI@ ResumeScreen":
     st.subheader("Example 1: Software Engineer")
