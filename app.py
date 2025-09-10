@@ -65,7 +65,7 @@ module = st.sidebar.radio("Choose a module", sections[section])
 # Main content
 # -----------------------
 st.title("AI Suite Demo Kit")
-# st.markdown(f"### {module}", unsafe_allow_html=True)
+st.markdown(f"### {module}", unsafe_allow_html=True)
 
 # module_name = module.split('@ ')[1] if "@ " in module else module
 # st.write(f"[The module {module_name}] demo kit")
@@ -239,3 +239,4 @@ Plan and structure video storylines for online courses, tutorials, or educationa
     st.code(example2, language="text")
 
     copy_button(example2, key="storyline_ex2")
+
