@@ -86,6 +86,8 @@ if module == "AI@ AskPro":
     copy_button(q2, key="askpro_q2")
 
 elif module == "AI@ Minutes":
+
+    st.write("Create a new meeting and setup accordingly.")
     # Raw GitHub URL of the image
     img_url = "https://raw.githubusercontent.com/Mlkaz3/AISuiteDemoKit/main/source/AIminutespic/1.png"
 
@@ -239,4 +241,5 @@ Plan and structure video storylines for online courses, tutorials, or educationa
     st.code(example2, language="text")
 
     copy_button(example2, key="storyline_ex2")
+
 
