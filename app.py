@@ -68,7 +68,7 @@ st.title("AI Suite Demo Kit")
 st.markdown(f"### {module}", unsafe_allow_html=True)
 
 module_name = module.split('@ ')[1] if "@ " in module else module
-st.write(f"[The module {module_name}] demo kit")
+# st.write(f"[The module {module_name}] demo kit")
 
 # ------------------------
 # Module-specific content
@@ -105,6 +105,7 @@ elif module == "AI@ SWOT":
 
 elif module == "AI@ Summary":
     st.subheader("Paste Content")
+    st.write("Copy the paste content")
     summary_text = """Workshop Learning Outcomes
 • Design and implement compelling adult learning experiences.
 • Conduct thorough Training Needs Analyses (TNA) to identify learning priorities.
@@ -120,19 +121,23 @@ elif module == "AI@ Summary":
     st.code(summary_text, language="text")
     copy_button(summary_text, key="summary_demo")
 
-    user_input = st.text_area("✍️ Paste your own content here for summary", height=200)
+    # user_input = st.text_area("✍️ Paste your own content here for summary", height=200)
 
 elif module == "AI@ EmailWriter":
     st.subheader("Example 1: Crisis / Error Handling (Support / Ops)")
-    example1 = """Scenario:
+    st.write("Scenario:")
+    example1 = """
 Ops team needs to inform clients about a temporary system downtime.
-Team inputs the situation → AI drafts a message that is transparent, calm, and instructive, saving time under stress."""
+"""
     st.code(example1, language="text")
+    st.write("Team inputs the situation → AI drafts a message that is transparent, calm, and instructive, saving time under stress.")
     copy_button(example1, key="emailwriter_ex1")
 
     st.subheader("Example 2: Partnership Proposal (Business Development)")
-    example2 = """Scenario:
+    st.write("Scenario:")
+    example2 = """
 A BD executive wants to propose a collaboration with another company.
-Provides key value points → AI generates a professional, persuasive proposal email that highlights mutual benefits."""
+"""
     st.code(example2, language="text")
+    st.write("Provides key value points → AI generates a professional, persuasive proposal email that highlights mutual benefits.")
     copy_button(example2, key="emailwriter_ex2")
