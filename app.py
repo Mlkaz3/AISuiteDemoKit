@@ -92,7 +92,14 @@ elif module == "AI@ Minutes":
     img_url = "https://raw.githubusercontent.com/Mlkaz3/AISuiteDemoKit/main/source/AIminutespic/1.png"
 
     # Display the image
-    st.image(img_url, caption="AI Minutes Screenshot", use_container_width=True)
+    st.image(img_url, caption="AI Minutes Create Meeting Screenshot", use_container_width=True)
+    
+    st.write("2. Once complete, you may assign attendees, check on meeting minutes, and use AI Summarize to make a 2 hour meeting in just a page of points.")
+    # Raw GitHub URL of the image
+    img_url1 = "https://raw.githubusercontent.com/Mlkaz3/AISuiteDemoKit/main/source/AIminutespic/2.png"
+
+    # Display the image
+    st.image(img_url1, caption="AI Minutes Result & Summary Screenshot", use_container_width=True)
 
 elif module == "AI@ SWOT":
     st.subheader("Example: Crisis Management (PR & Reputation Risk)")
@@ -241,5 +248,6 @@ Plan and structure video storylines for online courses, tutorials, or educationa
     st.code(example2, language="text")
 
     copy_button(example2, key="storyline_ex2")
+
 
 
