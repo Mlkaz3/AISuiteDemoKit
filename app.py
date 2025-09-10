@@ -90,7 +90,7 @@ elif module == "AI@ Minutes":
     img_url = "https://raw.githubusercontent.com/Mlkaz3/AISuiteDemoKit/main/source/AIminutespic/1.png"
 
     # Display the image
-    st.image(img_url, caption="AI Minutes Screenshot", use_column_width=True)
+    st.image(img_url, caption="AI Minutes Screenshot", use_container_width=True)
 
 elif module == "AI@ SWOT":
     st.subheader("Example: Crisis Management (PR & Reputation Risk)")
@@ -237,4 +237,5 @@ We noticed some delays in your recent report submissions. Could you explain the 
 Plan and structure video storylines for online courses, tutorials, or educational campaigns. Supports interactive learning content and engaging social media promotions for students or professionals.
 """
     st.code(example2, language="text")
+
     copy_button(example2, key="storyline_ex2")
