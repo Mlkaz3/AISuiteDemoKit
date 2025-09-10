@@ -65,9 +65,9 @@ module = st.sidebar.radio("Choose a module", sections[section])
 # Main content
 # -----------------------
 st.title("AI Suite Demo Kit")
-st.markdown(f"### {module}", unsafe_allow_html=True)
+# st.markdown(f"### {module}", unsafe_allow_html=True)
 
-module_name = module.split('@ ')[1] if "@ " in module else module
+# module_name = module.split('@ ')[1] if "@ " in module else module
 # st.write(f"[The module {module_name}] demo kit")
 
 # ------------------------
@@ -84,6 +84,13 @@ if module == "AI@ AskPro":
     q2 = "who is the boss of WAC?"
     st.code(q2, language="text")
     copy_button(q2, key="askpro_q2")
+
+elif module == "AI@ Minutes":
+    # Raw GitHub URL of the image
+    img_url = "https://raw.githubusercontent.com/Mlkaz3/AISuiteDemoKit/main/source/AIminutespic/1.png"
+
+    # Display the image
+    st.image(img_url, caption="AI Minutes Screenshot", use_column_width=True)
 
 elif module == "AI@ SWOT":
     st.subheader("Example: Crisis Management (PR & Reputation Risk)")
@@ -212,3 +219,22 @@ Works with management on training programs and workplace culture.
     st.code(example3, language="text")
     st.write("AI reviews resumes against this description → flags candidates experienced in HR operations, compliance, and talent management.")
     copy_button(example3, key="resumescreen_ex3")
+
+elif module == "AI@ Storyline":
+    
+    st.write("Choose the settings of type of content you would like to create, objective, style and etc from the system.")
+    st.write("Enter your text you may consider the following: ")
+    
+    st.subheader("Example 1: Healthcare / Wellness")
+    example1 = """
+We noticed some delays in your recent report submissions. Could you explain the reason?
+"""
+    st.code(example1, language="text")
+    copy_button(example1, key="storyline_ex1")
+
+    st.subheader("Example 2: Education / E-Learning")
+    example2 = """
+Plan and structure video storylines for online courses, tutorials, or educational campaigns. Supports interactive learning content and engaging social media promotions for students or professionals.
+"""
+    st.code(example2, language="text")
+    copy_button(example2, key="storyline_ex2")
